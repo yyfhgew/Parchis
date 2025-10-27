@@ -10,8 +10,8 @@ package modelo;
  */
 public class Tablero {
     private String [][] casillas;
-    private int filas;
-    private int columnas;
+    private int filas=8;
+    private int columnas=8;
             
     
    
@@ -31,6 +31,7 @@ public class Tablero {
     
     
     }
+        
     }
     
     
