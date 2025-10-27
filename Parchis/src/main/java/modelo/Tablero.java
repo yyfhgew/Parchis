@@ -13,32 +13,42 @@ public class Tablero {
     private int filas=8;
     private int columnas=8;
             
-    
-   
-    
-    public void Tablero(int filas,int columnas){
-        casillas=new String[filas][columnas];
-    this.filas=filas;
-    
-    }
-    
-    
-    //para que aparezca al inicio la lleno con 1
-    private void inicializar() {
-    for (int i = 0; i < filas; i++) {
-        for (int j = 0; j < columnas; j++) {
-            casillas[i][j] = "1"; 
-    
-    
-    }
+
+    public Tablero() {
         
+        casillas = new String[][] {
+            {"1","1","1","0","0","1","1","1"},
+            {"1","1","1","0","0","1","1","1"},
+            {"1","1","1","0","0","1","1","1"},
+            {"0","0","0","0","0","0","0","0"},
+            {"0","0","0","0","0","0","0","0"},
+            {"1","1","1","0","0","1","1","1"},
+            {"1","1","1","0","0","1","1","1"},
+            {"1","1","1","0","0","1","1","1"}
+        };
     }
+
+    
+  public String[][] getCasillas() {
+        return casillas;
+        }
+    }
+ 
+    
+    
+        
+        
+        
+        
+        
+        
     
     
     
     
     
     
-    }}
+    
+    
     
 

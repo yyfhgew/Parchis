@@ -10,4 +10,31 @@ package modelo;
  */
 public class Jugador {
     
-}
+     private String nombre;
+    private int fichaPosicion; 
+
+    public Jugador(String nombre) {
+        this.nombre = nombre;
+        fichaPosicion = 0;
+    }
+
+    
+    public String getNombre() {
+        return nombre;
+    }
+
+    
+    public int getFichaPosicion() {
+        return fichaPosicion;
+    }
+
+    
+    public void moverFicha(int pasos) {
+        fichaPosicion += pasos;
+    }
+
+    
+    public void reiniciarFicha() {
+        fichaPosicion = 0;
+    
+}}
