@@ -4,6 +4,8 @@
 
 package com.mycompany.parchis;
 
+import controlador.Controlador;
+
 /**
  *
  * @author gx160
@@ -11,6 +13,6 @@ package com.mycompany.parchis;
 public class Parchis {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        new Controlador();
     }
 }

@@ -4,6 +4,7 @@
  */
 package vista;
 
+import controlador.Controlador;
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -35,10 +36,7 @@ public class GUIInicio extends JFrame {
         JButton btnCreditos = new JButton(" c. Creditos ");
         JButton btnJugar = new JButton(" d. Jugar ");
 
-        
-        
-        
-        
+       
         
         
         panel.add(btnColor);
@@ -58,5 +56,5 @@ public class GUIInicio extends JFrame {
         setVisible(true);
 
     }
-
+''
 }
