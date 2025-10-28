@@ -9,5 +9,11 @@ package modelo;
  * @author gx160
  */
 public class Creditos {
+
+    public Creditos() {
+    }
+    
+    public void mostrarCreditos(){}
+    
     
 }

@@ -8,22 +8,28 @@ package modelo;
  *
  * @author gx160
  */
-public class Preguntas {
-    private String listaPreguntas[];
-    
-    
-    public Preguntas(){
-    listaPreguntas=new String[]{
-    
-    "Pregunta1       "
-    "Pregunta      "
-    "Pregunta       "
-    "Pregunta       "
-    "Pregunta       "
-    "Pregunta      "
-    "Pregunta       "
+public class Controles {
+
+    public Controles() {
+    }
+    public void Arriba(){
     
     
     
+    }
+    public void Abajo(){
     
-}}}
+    
+    
+    }
+    public void Izquierda(){
+    
+    
+    
+    }
+    public void Derecha(){
+    
+    
+    
+    }
+}

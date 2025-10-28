@@ -36,35 +36,35 @@ public class GUITableroo extends javax.swing.JFrame {
 
         jPanelTablero = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        Down = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        btnArriba = new javax.swing.JButton();
+        btnIzquierda = new javax.swing.JButton();
+        btnDerecha = new javax.swing.JButton();
+        btnAbajo = new javax.swing.JButton();
+        btnLanzarDado = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("up!");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnArriba.setText("up!");
+        btnArriba.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnArribaActionPerformed(evt);
             }
         });
 
-        jButton2.setText("left");
+        btnIzquierda.setText("left");
 
-        jButton3.setText("Rigth");
+        btnDerecha.setText("Rigth");
 
-        Down.setText("Down");
-        Down.addActionListener(new java.awt.event.ActionListener() {
+        btnAbajo.setText("Down");
+        btnAbajo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DownActionPerformed(evt);
+                btnAbajoActionPerformed(evt);
             }
         });
 
-        jButton4.setText("lanzar dado");
+        btnLanzarDado.setText("lanzar dado");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descarga.jpeg"))); // NOI18N
         jLabel2.setText("jLabel2");
@@ -77,41 +77,41 @@ public class GUITableroo extends javax.swing.JFrame {
                 .addContainerGap(99, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton2)
+                        .addComponent(btnIzquierda)
                         .addGap(66, 66, 66)
-                        .addComponent(jButton3)
+                        .addComponent(btnDerecha)
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(btnArriba)
                         .addGap(73, 73, 73))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(Down)
+                        .addComponent(btnAbajo)
                         .addGap(70, 70, 70))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton4)
-                        .addGap(64, 64, 64))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19))))
+                        .addGap(19, 19, 19))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(btnLanzarDado)
+                        .addGap(84, 84, 84))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(30, 30, 30)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(jButton4)
+                .addGap(34, 34, 34)
+                .addComponent(btnLanzarDado)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(btnArriba)
                         .addGap(83, 83, 83))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3))
+                            .addComponent(btnIzquierda)
+                            .addComponent(btnDerecha))
                         .addGap(32, 32, 32)))
-                .addComponent(Down)
+                .addComponent(btnAbajo)
                 .addGap(27, 27, 27))
         );
 
@@ -147,13 +147,13 @@ public class GUITableroo extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void DownActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DownActionPerformed
+    private void btnAbajoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAbajoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_DownActionPerformed
+    }//GEN-LAST:event_btnAbajoActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnArribaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArribaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnArribaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -181,11 +181,11 @@ public class GUITableroo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Down;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    public javax.swing.JButton btnAbajo;
+    public javax.swing.JButton btnArriba;
+    public transient javax.swing.JButton btnDerecha;
+    public javax.swing.JButton btnIzquierda;
+    public javax.swing.JButton btnLanzarDado;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel2;

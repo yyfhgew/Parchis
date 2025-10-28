@@ -8,15 +8,9 @@ package modelo;
  *
  * @author gx160
  */
-public class Historia {
+public class Jugar {
 
-    public Historia() {
+    public Jugar() {
     }
-    
-    public void mostrarHistoria(){
-    
-    
-    }
-    
-    
+    public void iniciarJuego(){}
 }

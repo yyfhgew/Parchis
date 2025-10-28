@@ -4,6 +4,8 @@
  */
 package vista;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author gx160
@@ -30,6 +32,11 @@ public class GUIInicioo extends javax.swing.JFrame {
 
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        btnHistoria = new javax.swing.JButton();
+        btnInstrucciones = new javax.swing.JButton();
+        btnCreditos = new javax.swing.JButton();
+        btnJugar = new javax.swing.JButton();
+        btnColor = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,20 +45,60 @@ public class GUIInicioo extends javax.swing.JFrame {
         jTextArea2.setForeground(new java.awt.Color(0, 0, 204));
         jTextArea2.setRows(5);
         jTextArea2.setText("Bienvenido a Parchiland");
-        jTextArea2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jTextArea2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jTextArea2.setCaretColor(new java.awt.Color(0, 0, 204));
         jTextArea2.setFocusable(false);
         jTextArea2.setRequestFocusEnabled(false);
         jTextArea2.setSelectedTextColor(new java.awt.Color(0, 0, 255));
         jScrollPane2.setViewportView(jTextArea2);
 
+        btnHistoria.setText("Historia");
+        btnHistoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHistoriaActionPerformed(evt);
+            }
+        });
+
+        btnInstrucciones.setText("Instrucciones");
+
+        btnCreditos.setText("Creditos");
+        btnCreditos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCreditosActionPerformed(evt);
+            }
+        });
+
+        btnJugar.setText("Jugar");
+        btnJugar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnJugarActionPerformed(evt);
+            }
+        });
+
+        btnColor.setText("Color");
+        btnColor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnColorActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnInstrucciones)
+                            .addComponent(btnHistoria)
+                            .addComponent(btnCreditos)
+                            .addComponent(btnJugar)
+                            .addComponent(btnColor))))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -59,11 +106,40 @@ public class GUIInicioo extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(331, Short.MAX_VALUE))
+                .addGap(39, 39, 39)
+                .addComponent(btnHistoria)
+                .addGap(34, 34, 34)
+                .addComponent(btnInstrucciones)
+                .addGap(30, 30, 30)
+                .addComponent(btnCreditos)
+                .addGap(33, 33, 33)
+                .addComponent(btnJugar)
+                .addGap(36, 36, 36)
+                .addComponent(btnColor)
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnHistoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHistoriaActionPerformed
+         
+    }//GEN-LAST:event_btnHistoriaActionPerformed
+
+    private void btnCreditosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreditosActionPerformed
+         
+    }//GEN-LAST:event_btnCreditosActionPerformed
+
+    private void btnColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColorActionPerformed
+        
+    }//GEN-LAST:event_btnColorActionPerformed
+
+    private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
+          GUITableroo tablero = new GUITableroo();
+    tablero.setVisible(true);  
+
+    this.setVisible(false);
+    }//GEN-LAST:event_btnJugarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -91,6 +167,11 @@ public class GUIInicioo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnColor;
+    public javax.swing.JButton btnCreditos;
+    public javax.swing.JButton btnHistoria;
+    public static javax.swing.JButton btnInstrucciones;
+    public javax.swing.JButton btnJugar;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables

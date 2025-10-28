@@ -10,4 +10,17 @@ package modelo;
  */
 public class Color {
     
+    
+    public Color(){
+    
+    
+    
+    }
+    
+    public void cambiarColor(){
+    
+    
+    
+    
+    }
 }
