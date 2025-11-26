@@ -19,6 +19,7 @@ public class GUIInicioo extends javax.swing.JFrame {
      */
     public GUIInicioo() {
         initComponents();
+       
     }
 
     /**
@@ -30,94 +31,75 @@ public class GUIInicioo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
         btnHistoria = new javax.swing.JButton();
         btnInstrucciones = new javax.swing.JButton();
         btnCreditos = new javax.swing.JButton();
         btnJugar = new javax.swing.JButton();
-        btnColor = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setFocusable(false);
+        setFocusableWindowState(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextArea2.setColumns(20);
-        jTextArea2.setFont(new java.awt.Font("SimSun-ExtB", 1, 36)); // NOI18N
-        jTextArea2.setForeground(new java.awt.Color(0, 0, 204));
-        jTextArea2.setRows(5);
-        jTextArea2.setText("Bienvenido a Parchiland");
-        jTextArea2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jTextArea2.setCaretColor(new java.awt.Color(0, 0, 204));
-        jTextArea2.setFocusable(false);
-        jTextArea2.setRequestFocusEnabled(false);
-        jTextArea2.setSelectedTextColor(new java.awt.Color(0, 0, 255));
-        jScrollPane2.setViewportView(jTextArea2);
-
-        btnHistoria.setText("Historia");
+        btnHistoria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/boton historia2.png"))); // NOI18N
+        btnHistoria.setBorder(null);
+        btnHistoria.setBorderPainted(false);
+        btnHistoria.setContentAreaFilled(false);
+        btnHistoria.setDefaultCapable(false);
+        btnHistoria.setFocusPainted(false);
+        btnHistoria.setFocusable(false);
+        btnHistoria.setRequestFocusEnabled(false);
+        btnHistoria.setRolloverEnabled(false);
         btnHistoria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHistoriaActionPerformed(evt);
             }
         });
+        getContentPane().add(btnHistoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, -1, -1));
 
-        btnInstrucciones.setText("Instrucciones");
+        btnInstrucciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/boton instrucciones.png"))); // NOI18N
+        btnInstrucciones.setActionCommand("");
+        btnInstrucciones.setBorder(null);
+        btnInstrucciones.setBorderPainted(false);
+        btnInstrucciones.setContentAreaFilled(false);
+        getContentPane().add(btnInstrucciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 210, -1, -1));
 
-        btnCreditos.setText("Creditos");
+        btnCreditos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/boton creditos.png"))); // NOI18N
+        btnCreditos.setBorder(null);
+        btnCreditos.setBorderPainted(false);
+        btnCreditos.setContentAreaFilled(false);
+        btnCreditos.setFocusPainted(false);
+        btnCreditos.setIconTextGap(0);
+        btnCreditos.setRolloverEnabled(false);
         btnCreditos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCreditosActionPerformed(evt);
             }
         });
+        getContentPane().add(btnCreditos, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 350, -1, -1));
 
-        btnJugar.setText("Jugar");
+        btnJugar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/boton jugar.png"))); // NOI18N
+        btnJugar.setBorder(null);
+        btnJugar.setBorderPainted(false);
+        btnJugar.setContentAreaFilled(false);
+        btnJugar.setFocusPainted(false);
         btnJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnJugarActionPerformed(evt);
             }
         });
+        getContentPane().add(btnJugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 440, -1, -1));
 
-        btnColor.setText("Color");
-        btnColor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnColorActionPerformed(evt);
-            }
-        });
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TITULO.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 510, 270));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 465, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnInstrucciones)
-                            .addComponent(btnHistoria)
-                            .addComponent(btnCreditos)
-                            .addComponent(btnJugar)
-                            .addComponent(btnColor))))
-                .addContainerGap(20, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39)
-                .addComponent(btnHistoria)
-                .addGap(34, 34, 34)
-                .addComponent(btnInstrucciones)
-                .addGap(30, 30, 30)
-                .addComponent(btnCreditos)
-                .addGap(33, 33, 33)
-                .addComponent(btnJugar)
-                .addGap(36, 36, 36)
-                .addComponent(btnColor)
-                .addContainerGap(44, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/5771256.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jLabel1.setFocusable(false);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 1300, 520));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -130,10 +112,6 @@ public class GUIInicioo extends javax.swing.JFrame {
          
     }//GEN-LAST:event_btnCreditosActionPerformed
 
-    private void btnColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColorActionPerformed
-        
-    }//GEN-LAST:event_btnColorActionPerformed
-
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
           GUITableroo tablero = new GUITableroo();
     tablero.setVisible(true);  
@@ -144,7 +122,7 @@ public class GUIInicioo extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+   {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -167,12 +145,11 @@ public class GUIInicioo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnColor;
     public javax.swing.JButton btnCreditos;
     public javax.swing.JButton btnHistoria;
     public static javax.swing.JButton btnInstrucciones;
     public javax.swing.JButton btnJugar;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

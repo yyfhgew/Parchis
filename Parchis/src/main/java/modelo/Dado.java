@@ -5,6 +5,7 @@
 package modelo;
 
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -22,14 +23,20 @@ public class Dado {
     }
 
     
-    public void lanzarDado() {
+    public int lanzar() {
         valor = random.nextInt(6) + 1;
+        return valor;
     }
 
     
     public int getValor() {
         return valor;
-    }
-        
-    }
+  }
+     
     
+    public void mostrarValor(){
+        
+        JOptionPane.showMessageDialog(null,"salio el "+valor); 
+    
+    
+}}

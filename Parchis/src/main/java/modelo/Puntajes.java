@@ -8,6 +8,29 @@ package modelo;
  *
  * @author gx160
  */
-public class Puntajes {
-    
+
+   public class Puntajes {
+
+    private int puntaje;
+
+    public Puntajes() {
+        puntaje = 5;
+    }
+
+    public int getPuntaje() {
+        return puntaje;
+    }
+
+    public void sumarAcierto() {
+        puntaje += 2;
+    }
+
+    public void restarFallo() {
+        puntaje -= 3;
+        if (puntaje < 0) puntaje = 0;
+    }
+
+    public boolean esGameOver() {
+        return puntaje <= 0;
+    }
 }

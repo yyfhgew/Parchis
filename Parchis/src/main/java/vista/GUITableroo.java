@@ -6,6 +6,7 @@ package vista;
 
 import controlador.Controlador;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /**
  *
@@ -23,6 +24,14 @@ public class GUITableroo extends javax.swing.JFrame {
      
     }
 
+    public void setLblCronometro(JLabel lblCronometro) {
+        this.lblCronometro = lblCronometro;
+    }
+
+    public JLabel getLblCronometro() {
+        return lblCronometro;
+    }
+
     /**
         initComponents();
     }
@@ -34,6 +43,7 @@ public class GUITableroo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
         jPanelTablero = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         btnArriba = new javax.swing.JButton();
@@ -42,78 +52,88 @@ public class GUITableroo extends javax.swing.JFrame {
         btnAbajo = new javax.swing.JButton();
         btnLanzarDado = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        lblResultadoDado = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        lblCronometro = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        lblFichaJugador1 = new javax.swing.JLabel();
+        lblFicha1Jugador2 = new javax.swing.JLabel();
+        lblPuntajepersonaje1 = new javax.swing.JLabel();
+        lblpuntajePersonaje2 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        lblFicha2jugador1 = new javax.swing.JLabel();
+        lblFicha3Jugador1 = new javax.swing.JLabel();
+        lblFicha4jugador1 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/3fondoplantas.png"))); // NOI18N
+        jLabel4.setText("jLabel4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnArriba.setText("up!");
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnArriba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/flechaArriba.png"))); // NOI18N
+        btnArriba.setContentAreaFilled(false);
         btnArriba.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnArribaActionPerformed(evt);
             }
         });
+        jPanel2.add(btnArriba, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 400, -1, -1));
 
-        btnIzquierda.setText("left");
+        btnIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/flechaIzquierda.png"))); // NOI18N
+        btnIzquierda.setContentAreaFilled(false);
+        jPanel2.add(btnIzquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, -1, -1));
 
-        btnDerecha.setText("Rigth");
+        btnDerecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/flechaDerecha.png"))); // NOI18N
+        btnDerecha.setContentAreaFilled(false);
+        jPanel2.add(btnDerecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 490, -1, -1));
 
-        btnAbajo.setText("Down");
+        btnAbajo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/flechaAbajo.png"))); // NOI18N
+        btnAbajo.setBorderPainted(false);
+        btnAbajo.setContentAreaFilled(false);
         btnAbajo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAbajoActionPerformed(evt);
             }
         });
+        jPanel2.add(btnAbajo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 580, 130, -1));
 
         btnLanzarDado.setText("lanzar dado");
+        jPanel2.add(btnLanzarDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 280, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/descarga.jpeg"))); // NOI18N
         jLabel2.setText("jLabel2");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 229, 155));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(99, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(btnIzquierda)
-                        .addGap(66, 66, 66)
-                        .addComponent(btnDerecha)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(btnArriba)
-                        .addGap(73, 73, 73))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(btnAbajo)
-                        .addGap(70, 70, 70))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(19, 19, 19))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(btnLanzarDado)
-                        .addGap(84, 84, 84))))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
-                .addComponent(btnLanzarDado)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(btnArriba)
-                        .addGap(83, 83, 83))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnIzquierda)
-                            .addComponent(btnDerecha))
-                        .addGap(32, 32, 32)))
-                .addComponent(btnAbajo)
-                .addGap(27, 27, 27))
-        );
+        lblResultadoDado.setText("resultado dado");
+        jPanel2.add(lblResultadoDado, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 220, 130, 40));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/3fondoplantas.png"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 530, 830));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ArbolDorado.png"))); // NOI18N
+        jLabel6.setText("jLabel6");
+        jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, -250, -1, -1));
+
+        jLabel9.setText("jLabel9");
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 130, -1, -1));
+
+        lblCronometro.setText("lblTablero");
+        jPanel2.add(lblCronometro, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, -1, -1));
 
         javax.swing.GroupLayout jPanelTableroLayout = new javax.swing.GroupLayout(jPanelTablero);
         jPanelTablero.setLayout(jPanelTableroLayout);
@@ -126,23 +146,91 @@ public class GUITableroo extends javax.swing.JFrame {
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tablero parchis.png"))); // NOI18N
+        getContentPane().add(jPanelTablero, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 0, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 695, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelTablero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        lblFichaJugador1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gx160frijolFicha.png"))); // NOI18N
+        getContentPane().add(lblFichaJugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 100, -1, -1));
+
+        lblFicha1Jugador2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/frijolnegro.png"))); // NOI18N
+        getContentPane().add(lblFicha1Jugador2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, -1, 50));
+
+        lblPuntajepersonaje1.setText("jLabel6");
+        getContentPane().add(lblPuntajepersonaje1, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 10, 80, 60));
+
+        lblpuntajePersonaje2.setText("jLabel6");
+        getContentPane().add(lblpuntajePersonaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 90, 90, 50));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arbolDorado.png"))); // NOI18N
+        jLabel7.setText("jLabel7");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, -200, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arbolDorado.png"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 260, -1, -1));
+
+        lblFicha2jugador1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gx160frijolFicha.png"))); // NOI18N
+        getContentPane().add(lblFicha2jugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 60, -1, -1));
+
+        lblFicha3Jugador1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gx160frijolFicha.png"))); // NOI18N
+        getContentPane().add(lblFicha3Jugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, -1, -1));
+
+        lblFicha4jugador1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gx160frijolFicha.png"))); // NOI18N
+        getContentPane().add(lblFicha4jugador1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 90, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/frijolnegro.png"))); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 60, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/frijolnegro.png"))); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 140, -1, -1));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/frijolnegro.png"))); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, -1, -1));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelTablero, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 627, Short.MAX_VALUE)
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 250, 10, 10));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 460, 30, 10));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 240, 30, 30));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tablero parchis.png"))); // NOI18N
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/3fondoplantas.png"))); // NOI18N
+        jLabel5.setText("jLabel5");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, -40, 880, 870));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -187,8 +275,31 @@ public class GUITableroo extends javax.swing.JFrame {
     public javax.swing.JButton btnIzquierda;
     public javax.swing.JButton btnLanzarDado;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanelTablero;
+    public javax.swing.JLabel lblCronometro;
+    private javax.swing.JLabel lblFicha1Jugador2;
+    private javax.swing.JLabel lblFicha2jugador1;
+    private javax.swing.JLabel lblFicha3Jugador1;
+    private javax.swing.JLabel lblFicha4jugador1;
+    private javax.swing.JLabel lblFichaJugador1;
+    private javax.swing.JLabel lblPuntajepersonaje1;
+    private javax.swing.JLabel lblResultadoDado;
+    private javax.swing.JLabel lblpuntajePersonaje2;
     // End of variables declaration//GEN-END:variables
 }

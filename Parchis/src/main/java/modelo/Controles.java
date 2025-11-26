@@ -10,26 +10,26 @@ package modelo;
  */
 public class Controles {
 
+    int x;
+    int y;
+
     public Controles() {
     }
-    public void Arriba(){
-    
-    
-    
+
+    public void Arriba() {
+        y = y + 1; //y++
     }
-    public void Abajo(){
-    
-    
-    
+
+    public void Abajo() {
+        y = y - 1;
     }
-    public void Izquierda(){
-    
-    
-    
+
+    public void Izquierda() {
+        x = x - 1;
     }
-    public void Derecha(){
-    
-    
-    
+
+    public void Derecha() {
+        x = x + 1;
+
     }
 }

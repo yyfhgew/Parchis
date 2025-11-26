@@ -10,31 +10,28 @@ package modelo;
  */
 public class Jugador {
     
-     private String nombre;
-    private int fichaPosicion; 
+private String nombre;
+    private int puntaje;
 
     public Jugador(String nombre) {
         this.nombre = nombre;
-        fichaPosicion = 0;
+        this.puntaje = 0;
     }
 
-    
-    public String getNombre() {
-        return nombre;
+    public String getNombre() { return nombre; }
+    public int getPuntaje() { return puntaje; }
+
+    public void setPuntaje(int puntaje) {
+        this.puntaje = puntaje;
     }
 
-    
-    public int getFichaPosicion() {
-        return fichaPosicion;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    
-    public void moverFicha(int pasos) {
-        fichaPosicion += pasos;
+    public void aumentarPuntaje(int cantidad) {
+        if (cantidad > 0) {
+            this.puntaje += cantidad;
+        }
     }
-
-    
-    public void reiniciarFicha() {
-        fichaPosicion = 0;
-    
-}}
+}
